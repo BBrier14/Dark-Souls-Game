@@ -16,6 +16,20 @@ for (var i = 0; i < numberOptions.length; i++) {
     $("#bosses").append(imageBoss);
 }
 
+$(".boss-image").on("click", function() {
+    bossValue = ($(this).attr("data-bossvalue"));
+    bossValue = parseInt(bossValue);
+    counter += bossValue;
+    alert("You have collected " + counter + " souls!")
+
+    if (counter === targetNumber) {
+        alert("You may enter Anor Lando!");
+        }
+        
+        else if (counter >= targetNumber) {
+        alert("You may not enter!")
+        }
+});
 
 
 //On click functions for my images
