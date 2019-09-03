@@ -1,29 +1,21 @@
-/* #demon {
-    width: 300px;
-    height: 300px;
-}
-
-#gundyr {
-    width: 300px;
-    height: 300px;
-}
-
-#soul {
-    width: 300px;
-    height: 300px;
-}
-
-#vordt {
-    width: 300px;
-    height: 300px;
-}
-
-h1 {
-    font-size: 50px;
+h1, h2 {
     text-align: center;
-} */
+    font-size: 30px;
+    font-family: 'Alegreya SC', serif;
+}
+
 
 .boss-image {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
+}
+
+#user {
+    margin-left: 25%;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Alegreya SC', serif;
 }

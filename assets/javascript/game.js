@@ -1,9 +1,11 @@
 //Variables needed for the game
 var counter = 0;
 var targetNumber = 50;
-var targetNumberOptions = [50,75,100,125]
+var targetNumberOptions = (50,75,100,125)
 var numberOptions = [5,10,15,20];
 var increment = numberOptions[Math.round(Math.random())];
+var wins = 0;
+var losses = 0;
 
 
 //Target number required shown on screen to user
@@ -27,13 +29,18 @@ $(".boss-image").on("click", function() {
     if (counter === targetNumber) {
         alert("You may enter Anor Lando!");
         counter = 0;
+        wins++;
         $("#souls-acquired").text(counter);
+        $("#keys-acquired").text(wins);
+        
         }
         
     else if (counter >= targetNumber) {
-        alert("You may not enter!")
+        alert("You have been consumed by the Abyss!")
         counter = 0;
+        losses++;
         $("#souls-acquired").text(counter);
+        $("#humanity-lost").text(losses);
         }
 });
 
@@ -64,10 +71,10 @@ $(".boss-image").on("click", function() {
 // });
 
 //Win & Loss conditions
-if (counter === targetNumber) {
-alert("You may enter Anor Lando!");
-}
+// if (counter === targetNumber) {
+// alert("You may enter Anor Lando!");
+// }
 
-else if (counter >= targetNumber) {
-alert("You may not enter!")
-}
+// else if (counter >= targetNumber) {
+// alert("You may not enter!")
+// }
