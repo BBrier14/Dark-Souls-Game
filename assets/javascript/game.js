@@ -27,7 +27,7 @@ $(".boss-image").on("click", function() {
     $("#souls-acquired").text(counter);
 
     if (counter === targetNumber) {
-        alert("You may enter Anor Lando!");
+        // alert("You may enter Anor Lando!");
         counter = 0;
         wins++;
         $("#souls-acquired").text(counter);
@@ -36,12 +36,23 @@ $(".boss-image").on("click", function() {
         }
         
     else if (counter >= targetNumber) {
-        alert("You have been consumed by the Abyss!")
+        // alert("You have been consumed by the Abyss!")
         counter = 0;
         losses++;
         $("#souls-acquired").text(counter);
         $("#humanity-lost").text(losses);
         }
+
+    if (wins > 9) {
+        alert("You may enter Anor Londo")
+        wins = 0;
+        losses = 0;
+    }
+    if (losses > 9) {
+        alert("You have been consumed by the abyss")
+        wins = 0;
+        losses = 0;
+    }
 });
 
 
