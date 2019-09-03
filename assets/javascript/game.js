@@ -1,12 +1,14 @@
 //Variables needed for the game
 var counter = 0;
 var targetNumber = 50;
+var targetNumberOptions = [50,75,100,125]
 var numberOptions = [5,10,15,20];
 var increment = numberOptions[Math.round(Math.random())];
 
 
 //Target number required shown on screen to user
 $("#souls-required").text(targetNumber);
+$("#souls-acquired").text(counter);
 
 for (var i = 0; i < numberOptions.length; i++) {
     var imageBoss = $("<img>");
@@ -20,14 +22,18 @@ $(".boss-image").on("click", function() {
     bossValue = ($(this).attr("data-bossvalue"));
     bossValue = parseInt(bossValue);
     counter += bossValue;
-    alert("You have collected " + counter + " souls!")
+    $("#souls-acquired").text(counter);
 
     if (counter === targetNumber) {
         alert("You may enter Anor Lando!");
+        counter = 0;
+        $("#souls-acquired").text(counter);
         }
         
-        else if (counter >= targetNumber) {
+    else if (counter >= targetNumber) {
         alert("You may not enter!")
+        counter = 0;
+        $("#souls-acquired").text(counter);
         }
 });
 
