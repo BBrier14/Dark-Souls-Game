@@ -1,4 +1,4 @@
-#demon {
+/* #demon {
     width: 300px;
     height: 300px;
 }
@@ -21,4 +21,9 @@
 h1 {
     font-size: 50px;
     text-align: center;
+} */
+
+.boss-image {
+    width: 300px;
+    height: 300px;
 }
