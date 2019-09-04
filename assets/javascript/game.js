@@ -62,11 +62,15 @@ $(".boss-image").on("click", function() {
         alert("You may enter Anor Londo")
         wins = 0;
         losses = 0;
+        $("#keys-acquired").text(wins);
+        $("#humanity-lost").text(losses);
     }
     if (losses > 9) {
         alert("You have been consumed by the abyss")
         wins = 0;
         losses = 0;
+        $("#keys-acquired").text(wins);
+        $("#humanity-lost").text(losses);
     }
 });
 
