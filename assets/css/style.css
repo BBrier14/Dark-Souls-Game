@@ -19,3 +19,8 @@ p {
     font-size: 40px;
     font-family: 'Alegreya SC', serif;
 }
+
+@media screen and (max-width: 640px) {
+    #user {
+margin-left: 0px;
+    }}
