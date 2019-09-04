@@ -36,8 +36,10 @@ $(".boss-image").on("click", function() {
         $("#keys-acquired").text(wins);
         soulsRequired = targetNumberOptions[Math.floor(Math.random()*targetNumberOptions.length)];
         $("#souls-required").text(soulsRequired);
+
         //test test test
-       .attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)])
+       imageBoss.attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)]);
+       $("#bosses").append(imageBoss);
         //test test test
         }
         
@@ -49,8 +51,10 @@ $(".boss-image").on("click", function() {
         $("#humanity-lost").text(losses);
         soulsRequired = targetNumberOptions[Math.floor(Math.random()*targetNumberOptions.length)];
         $("#souls-required").text(soulsRequired);
+
         //test test test
-        .attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)])
+        imageBoss.attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)]);
+        $("#bosses").append(imageBoss);
         //test test test
         }
 
