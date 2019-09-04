@@ -18,7 +18,7 @@ for (var i = 0; i < numberOptions.length; i++) {
     var imageBoss = $("<img>");
     imageBoss.addClass("boss-image");
     imageBoss.attr("src", "assets/images/demon.jpg");
-    imageBoss.attr("data-bossvalue", numberOptions[i]);
+    imageBoss.attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)]);
     $("#bosses").append(imageBoss);
 }
 
