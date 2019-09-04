@@ -1,9 +1,10 @@
 //Variables needed for the game
 var counter = 0;
 var targetNumber = soulsRequired;
-var targetNumberOptions = [50,75,100,125]
+var targetNumberOptions = [24,35,65,47]
 var soulsRequired = targetNumberOptions[Math.floor(Math.random()*targetNumberOptions.length)];
-var numberOptions = [5,10,15,20];
+var numberOptions = [2,5,7,9];
+var hiddenValues = numberOptions[Math.floor(Math.random()*numberOptions.length)];
 var increment = numberOptions[Math.round(Math.random())];
 var wins = 0;
 var losses = 0;
