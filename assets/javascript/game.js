@@ -36,6 +36,9 @@ $(".boss-image").on("click", function() {
         $("#keys-acquired").text(wins);
         soulsRequired = targetNumberOptions[Math.floor(Math.random()*targetNumberOptions.length)];
         $("#souls-required").text(soulsRequired);
+        //test test test
+       .attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)])
+        //test test test
         }
         
     else if (counter >= soulsRequired) {
@@ -46,6 +49,9 @@ $(".boss-image").on("click", function() {
         $("#humanity-lost").text(losses);
         soulsRequired = targetNumberOptions[Math.floor(Math.random()*targetNumberOptions.length)];
         $("#souls-required").text(soulsRequired);
+        //test test test
+        .attr("data-bossvalue", numberOptions[Math.floor(Math.random()*numberOptions.length)])
+        //test test test
         }
 
     if (wins > 9) {
